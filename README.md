@@ -18,11 +18,32 @@ This project applies deep learning techniques to denoise color images using a hy
 
 Image-Denoising-Outlier-Detection/
 │
-├── denoiser_unet_model.h5 # Trained U-Net model
+├── denoiser_unet_model.h5 
+├── images/
+│ ├── noisy/ 
+| |   ├── train/ 
+| |   ├── test/ 
+| |   └── val/ 
+│ └── clean/ 
+|     ├── train/ 
+|     ├── test/ 
+|     └── val/ 
 ├── images_test/
 │ ├── noisy/ # Noisy test images
 │ └── clean/ # Clean test images
 │
 ├── denoising_and_outlier_detection.ipynb # Main notebook
-├── utils.py # PSNR/SSIM/Outlier functions (optional)
+├── Model_uses.py 
+├── Model.ipynb 
 └── README.md
+
+
+📈 Evaluation Metrics
+> PSNR (Peak Signal-to-Noise Ratio): Indicates how much the denoised image resembles the ground truth. Higher is better.
+> SSIM (Structural Similarity Index): Measures visual similarity. Ranges from 0 to 1. Higher is better.
+> MSE (Reconstruction Error): Used to detect outlier images after denoising.
+
+⚙️ Outlier Detection Logic
+  1.Compute MSE between clean and denoised images.
+  2.Calculate threshold = mean + 2 * std_dev. 
+  3.Flag images with reconstruction error > threshold as outliers.

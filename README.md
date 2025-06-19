@@ -45,5 +45,5 @@ Image-Denoising-Outlier-Detection/
 
 ⚙️ Outlier Detection Logic
   1. Compute MSE between clean and denoised images.
-  2 .Calculate threshold = mean + 2 * std_dev. 
+  2. Calculate threshold = mean + 2 * std_dev. 
   3. Flag images with reconstruction error > threshold as outliers.

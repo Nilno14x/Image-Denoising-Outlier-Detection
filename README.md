@@ -44,6 +44,6 @@ Image-Denoising-Outlier-Detection/
   3. MSE (Reconstruction Error): Used to detect outlier images after denoising.
 
 ⚙️ Outlier Detection Logic
-  1.Compute MSE between clean and denoised images.
-  2.Calculate threshold = mean + 2 * std_dev. 
-  3.Flag images with reconstruction error > threshold as outliers.
+  1. Compute MSE between clean and denoised images.
+  2 .Calculate threshold = mean + 2 * std_dev. 
+  3. Flag images with reconstruction error > threshold as outliers.

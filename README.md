@@ -39,9 +39,9 @@ Image-Denoising-Outlier-Detection/
 
 
 📈 Evaluation Metrics
-> PSNR (Peak Signal-to-Noise Ratio): Indicates how much the denoised image resembles the ground truth. Higher is better.
-> SSIM (Structural Similarity Index): Measures visual similarity. Ranges from 0 to 1. Higher is better.
-> MSE (Reconstruction Error): Used to detect outlier images after denoising.
+  1. PSNR (Peak Signal-to-Noise Ratio): Indicates how much the denoised image resembles the ground truth. Higher is better.
+  2. SSIM (Structural Similarity Index): Measures visual similarity. Ranges from 0 to 1. Higher is better.
+  3. MSE (Reconstruction Error): Used to detect outlier images after denoising.
 
 ⚙️ Outlier Detection Logic
   1.Compute MSE between clean and denoised images.
